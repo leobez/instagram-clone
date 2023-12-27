@@ -1,5 +1,13 @@
 # Reactgram
 
+<hr> 
+
+O site esta sendo hospedado com os serviços: [Link]
+
+O site pode ser acessado: [Aqui]
+
+<hr>
+
 Site clone do instagram, feito durante o curso de React na [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/)
 
 Site feito com o propósito de unificar conhecimento Frontend e Backend, utilizando das tecnologias React, Nodejs, Express.js e o banco de dados mongoDB.
@@ -60,11 +68,10 @@ Os endpoints foram separadas entre rotas de cada uma das entidades do sistema, n
 
 ## Frontend
 
+O Frontend do site foi criado com React, além do uso do Redux a fim de gerenciar os estados da aplicação. 
 
+Com o Redux, foram criados `services` e `slices` a fim de gerenciar a conexão com os endpoints da API e os estados provenientes dessa conexão. 
 
-
-
-
-
+Foram criados funções, tanto nos `services` como no `slices` para cada ação possível no sistema, que já foram tratadas na seção de Backend.
 
 
