@@ -18,7 +18,7 @@ O sistema foi feito utilizando da arquitetura MVC (Model View Controller).
 
 Através do framework Express, foram criados endpoints que possibilitam executar alguma ação no banco de dados.
 
-Os endpoints foram separadas entre rotas de cada uma das entidades do sistema, no caso: `User` e `Photo`
+Os endpoints foram separadas entre rotas de cada uma das entidades do sistema, no caso: `User` e `Photo`.
 
 ### User endpoints
 
@@ -32,7 +32,7 @@ Os endpoints foram separadas entre rotas de cada uma das entidades do sistema, n
 
 `/api/users/`: PUT. Edita informações do usuário atual. 
 
-`/api/users/:id`: GET. Recupera informações sobre um usuário de determinado `id`
+`/api/users/:id`: GET. Recupera informações sobre um usuário de determinado `id`.
 
 ### Photo endpoints
 
@@ -40,15 +40,15 @@ Os endpoints foram separadas entre rotas de cada uma das entidades do sistema, n
 
 `/api/photos/`: POST. 
 
-`/api/photos/:id`: DELETE. Exclui uma fotos do banco de dados baseado em seu `id`
+`/api/photos/:id`: DELETE. Exclui uma fotos do banco de dados baseado em seu `id`.
 
 `/api/photos/`: GET. Recupera todas as fotos do banco de dados. 
 
 `/api/photos/user/:id`: GET. Recupera todas as fotos de um determinado usuário.
 
-`/api/photos/search`: GET. Recupera fotos baseado em uma query, através do argumento `?q=`
+`/api/photos/search`: GET. Recupera fotos baseado em uma query, através do argumento `?q=`.
 
-`/api/photos/:id`: GET. Recupera uma foto baseado em seu `id`
+`/api/photos/:id`: GET. Recupera uma foto baseado em seu `id`.
 
 `/api/photos/:id`: PUT. Edita as informações de uma foto. 
 
