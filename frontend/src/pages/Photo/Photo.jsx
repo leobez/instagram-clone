@@ -37,7 +37,6 @@ const Photo = () => {
 
 	// Insert a like
 	const handleLike = () => {
-		console.log(photo)
 		dispatch(like(photo._id))
 		resetMessage()
 	}

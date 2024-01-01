@@ -24,10 +24,6 @@ function App() {
 
 	const {auth, loading} = useAuth()
 
-	useEffect(() => {
-		console.log("AUTH: ", auth)
-	}, [auth])
-
 	if (loading) {
 		return <p>Carregando...</p>
 	}

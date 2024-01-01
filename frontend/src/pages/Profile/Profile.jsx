@@ -31,10 +31,6 @@ const Profile = () => {
 		message: messagePhoto, 
 		error: errorPhoto} = useSelector(state => state.photo)
 
-	useEffect(() => {
-		console.log("PHOTO: ", photos)
-	}, [photos])
-
 	const [title, setTitle] = useState("")
 	const [image, setImage] = useState("")
 

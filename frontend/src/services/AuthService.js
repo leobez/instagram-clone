@@ -41,7 +41,6 @@ const login = async(data) => {
 			localStorage.setItem("user", JSON.stringify(res))
 		}
 
-		console.log("TESTE: ", res)
 		return res
 
 	} catch (error) {
