@@ -1,6 +1,6 @@
 /* export const api = "http://localhost:5000/api" */
 export const api = `https://akita-next-promptly.ngrok-free.app/api`
-export const uploads = "http://localhost:5000/uploads"
+export const uploads = "https://akita-next-promptly.ngrok-free.app/uploads"
 
 export const requestConfig = (method, data, token=null, image=null) => {
 
