@@ -7,17 +7,23 @@ const register = async(data) => {
 
 	try {
 		const res = await fetch(api + "/users/register", config)
-			.then((res)=> res.json())
-			.catch((err) => err)
 
-		if (res._id) {
-			localStorage.setItem("user", JSON.stringify(res))
+		const data = await res.json()
+
+		if (data._id) {
+			localStorage.setItem("user", JSON.stringify(data))
 		}
 
-		return res
+		return data
 
 	} catch (error) {
 		console.log(error)
+		
+		if (error.message.includes("NetworkError when attempting to fetch resource")) {
+			return {
+				errors: ["API inativa."]
+			}
+		}
 	}
 
 }
@@ -34,17 +40,24 @@ const login = async(data) => {
 
 	try {
 		const res = await fetch(api + "/users/login", config)
-			.then(res => res.json())
-			.catch(err => err)
 
-		if (res._id) {
-			localStorage.setItem("user", JSON.stringify(res))
+		const data = await res.json()
+
+		if (data._id) {
+			localStorage.setItem("user", JSON.stringify(data))
 		}
 
-		return res
+		return data
 
 	} catch (error) {
+
 		console.log(error)
+
+		if (error.message.includes("NetworkError when attempting to fetch resource")) {
+			return {
+				errors: ["API inativa."]
+			}
+		}
 	}
 
 }
