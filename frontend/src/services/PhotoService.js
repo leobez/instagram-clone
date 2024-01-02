@@ -123,10 +123,10 @@ const getAllPhotos = async(token) => {
 	try {
 
 		const res = await fetch(api + "/photos", config)
-			.then(res => res.json())
-			.catch(err => err)
-		
-		return res
+
+		const data = await res.json()
+
+		return data
 
 	} catch (error) {
 		console.log(error)

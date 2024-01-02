@@ -72,11 +72,23 @@ const deletePhoto = async(req, res) => {
 
 // Get all photos
 const getAllPhotos = async(req, res) => {
-	const photos = await Photo.find({}).sort(
-		[["createdAt", -1]]
-	).exec()
 
-	res.status(200).json(photos)
+	try {
+
+		const photos = await Photo.find({}).sort(
+			[["createdAt", -1]]
+		).exec()
+
+		res.status(200).json(photos)
+
+	} catch (error) {
+		
+		res.status(404).json({
+			errors : ["Erro. Algo deu erradoo"]
+		})
+
+	}
+
 }
 
 // Get user photos
