@@ -1,6 +1,5 @@
-/* export const api = "ngrok url" */
 /* export const api = "http://localhost:5000/api" */
-
+export const api = `https://akita-next-promptly.ngrok-free.app/api`
 export const uploads = "http://localhost:5000/uploads"
 
 export const requestConfig = (method, data, token=null, image=null) => {
@@ -16,7 +15,9 @@ export const requestConfig = (method, data, token=null, image=null) => {
 	} else if (method === "DELETE" || data === null) {
 		config = {
 			method, 
-			headers: {}
+			headers: {
+				"ngrok-skip-browser-warning": true,
+			}
 		}
 	} else {
 		config = {
@@ -28,8 +29,10 @@ export const requestConfig = (method, data, token=null, image=null) => {
 		}
 	}
 
+	config.headers["ngrok-skip-browser-warning"] = true
+
 	if (token) {
-		config.headers.Authorization = `Beares ${token}`
+		config.headers.Authorization = `Bearer ${token}`
 	}
 
 	return config
