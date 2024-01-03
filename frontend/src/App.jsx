@@ -5,7 +5,6 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 // Hooks
 import { useAuth } from './hooks/useAuth'
-import { useEffect } from 'react'
 
 // Componentes
 import Navbar from './components/Navbar'
