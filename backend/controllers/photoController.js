@@ -109,7 +109,7 @@ const getUserPhotos = async(req, res) => {
 
 // Get photo by id
 const getPhotoById = async(req, res) => {
-	console.log("chegou")
+
 	const {id} = req.params
 
 	try {
