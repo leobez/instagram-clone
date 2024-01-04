@@ -2,9 +2,13 @@
 
 <hr> 
 
-O site esta sendo hospedado com os serviços: [Link]
+O site esta sendo hospedado com os serviços [netlify](https://www.netlify.com/)
 
-O site pode ser acessado: [Aqui]
+API sendo hoestada localmente com uso do [ngrok](https://ngrok.com/docs/getting-started/)
+
+API atualmente desativada.
+
+O site pode ser acessado [aqui](https://reactgramleobez.netlify.app/)
 
 <hr>
 
