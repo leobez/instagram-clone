@@ -87,3 +87,7 @@ body {
   .hide {
 	display: none;
   }
+
+  img {
+	object-fit: cover;
+  }

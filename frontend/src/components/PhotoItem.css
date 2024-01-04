@@ -1,6 +1,7 @@
 .photo-item img {
 	width: 100%;
 	border: 1px solid white;
+	object-fit: cover;
   }
   
   #home .photo-item h2 {
