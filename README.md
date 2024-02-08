@@ -1,4 +1,4 @@
-# Reactgram
+# Instagram clone
 
 <hr> 
 
@@ -14,7 +14,7 @@ O site pode ser acessado [aqui](https://reactgramleobez.netlify.app/)
 
 Site clone do instagram, feito durante o curso de React na [Udemy](https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/)
 
-Site feito com o propósito de unificar conhecimento Frontend e Backend, utilizando das tecnologias React, Nodejs, Express.js e o banco de dados mongoDB.
+Site feito com o propósito de unificar conhecimento Frontend e Backend, utilizando das tecnologias React.js, Node.js, Redux, Express.js e mongoDB.
 
 <hr>
 
