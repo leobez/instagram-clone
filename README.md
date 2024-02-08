@@ -8,7 +8,7 @@ API sendo hoestada localmente com uso do [ngrok](https://ngrok.com/docs/getting-
 
 API atualmente desativada.
 
-O site pode ser acessado [aqui](https://reactgramleobez.netlify.app/)
+O site pode ser acessado [aqui](https://instagramclone-leob.netlify.app/)
 
 <hr>
 
