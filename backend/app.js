@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: false}))
 
 // solve CORS
 /* app.use(cors({credentials: true, origin: "http://localhost:5173"})) */
-app.use(cors({credentials: true, origin: "https://reactgramleobez.netlify.app"}))
+app.use(cors({credentials: true, origin: "https://instagramclone-leob.netlify.app"}))
 
 // upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")))
